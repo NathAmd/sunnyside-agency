@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+body header {
+  background-image: url("Assets/images/photos/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+body header #icon {
+  position: absolute;
+  width: 50%;
+  font-weight: 1000;
+  font-size: 40px;
+  padding-left: 2%;
+  padding-top: 2%;
+  color: whitesmoke;
+}
+body header #option {
+  position: absolute;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  color: whitesmoke;
+  font-size: 15px;
+  text-align: right;
+  margin-top: 3%;
+}
+body header #option a {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+body header #option #contact {
+  font-weight: 900;
+  color: black;
+  background-color: whitesmoke;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  border-radius: 100px;
+}
+body header #hamburger {
+  position: absolute;
+  width: 7.5%;
+  margin-left: 90%;
+  margin-top: 5%;
+}
+body header h1 {
+  position: absolute;
+  margin-top: -40%;
+  width: 100%;
+  font-size: 5vw;
+  font-weight: 1000;
+  text-align: center;
+  color: whitesmoke;
+}
+body header #back {
+  width: 100%;
+  height: 100%;
+}
+body header #arrowFlex {
+  position: absolute;
+  margin-top: -32.5%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+body header #arrowFlex #arrow {
+  width: 5%;
+}
+body main #Section-1 {
+  display: flex;
+}
+body main #Section-1 article {
+  text-align: center;
+  height: auto;
+}
+body main #Section-1 article #OnRect {
+  padding: 3em;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+body main #Section-1 article #OnRect h1 {
+  font-size: 25px;
+  font-weight: 900;
+  color: rgb(65, 65, 65);
+  padding-bottom: 10%;
+}
+body main #Section-1 article #OnRect p {
+  font-size: 12px;
+  font-weight: 900;
+  color: rgb(126, 126, 126);
+  padding-bottom: 10%;
+}
+body main #Section-1 article #OnRect a {
+  font-size: 15px;
+  font-weight: 900;
+  color: rgb(65, 65, 65);
+}
+body main #Section-1 article img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body main #Section-1 article #OnImg {
+  position: absolute;
+  text-align: center;
+  color: rgba(65, 65, 65, 0.9);
+}
+body main #Section-1 article #OnImg h2 {
+  font-size: 25px;
+  padding-bottom: 7.5%;
+}
+body main #Section-1 article #OnImg p {
+  font-size: 12px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+body main #people {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+body main #people h2 {
+  padding-bottom: 5%;
+  color: rgb(126, 126, 126);
+}
+body main #people #Section-2 {
+  display: flex;
+  justify-content: space-around;
+}
+body main #people #Section-2 article {
+  padding-top: 5%;
+}
+body main #people #Section-2 article img {
+  width: 25%;
+  border-radius: 100%;
+}
+body main #people #Section-2 article p {
+  color: rgb(126, 126, 126);
+  font-size: 13px;
+  font-weight: 800;
+  padding-top: 5%;
+}
+body main #people #Section-2 article h2 {
+  color: rgb(40, 40, 40);
+  font-size: 20px;
+  font-weight: 1000;
+  padding-top: 5%;
+}
+body main #people #Section-2 article h3 {
+  color: rgb(126, 126, 126);
+  font-size: 15px;
+  padding-bottom: 10%;
+}
+body main #Section-3 {
+  display: flex;
+  flex-flow: wrap;
+}
+body main #Section-3 article img {
+  width: 100%;
+  height: 100%;
+}
+body footer {
+  width: 100%;
+  height: 20%;
+  background-color: aquamarine;
+}
+body footer h2 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+body footer #link-text, body footer #link-icon {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+body footer #link-text a {
+  margin-left: 2%;
+  margin-right: 2%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 720px) {
+  header #option {
+    opacity: 0;
+  }
+  header #hamburger {
+    opacity: 1;
+  }
+  main #Section-1 {
+    flex-flow: column;
+  }
+  main #Section-1 article {
+    width: 100%;
+  }
+  main #Section-1 #OnImg {
+    margin-top: -30%;
+    width: 100%;
+  }
+  main #Section-2 {
+    flex-flow: column;
+  }
+  main #Section-2 article {
+    width: 100%;
+  }
+  main #Section-3 article {
+    width: 50%;
+  }
+  footer h2 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  footer #link-icon a {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+@media (min-width: 721px) {
+  header #option {
+    opacity: 1;
+  }
+  header #hamburger {
+    opacity: 0;
+  }
+  main #Section-1 {
+    flex-flow: wrap;
+  }
+  main #Section-1 article {
+    width: 50%;
+  }
+  main #Section-1 #OnImg {
+    margin-top: -17%;
+    width: 50%;
+  }
+  main #Section-2 {
+    flex-flow: wrap;
+  }
+  main #Section-2 article {
+    width: 30%;
+  }
+  main #Section-3 article {
+    width: 25%;
+  }
+  footer h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  footer #link-icon a {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+a {
+  color: white;
+  text-decoration: none;
+  transition: -webkit-text-decoration 1s;
+  transition: text-decoration 1s;
+  transition: text-decoration 1s, -webkit-text-decoration 1s;
+}
+
+a:hover {
+  text-decoration: overline underline;
+}/*# sourceMappingURL=styles.css.map */
