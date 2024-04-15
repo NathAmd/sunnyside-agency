@@ -194,6 +194,12 @@ body footer #link-text a {
   header #hamburger {
     opacity: 1;
   }
+  #a {
+    order: 1;
+  }
+  #b {
+    order: 2;
+  }
   main #Section-1 {
     flex-flow: column;
   }
@@ -230,6 +236,12 @@ body footer #link-text a {
   }
   header #hamburger {
     opacity: 0;
+  }
+  #a {
+    order: 2;
+  }
+  #b {
+    order: 1;
   }
   main #Section-1 {
     flex-flow: wrap;

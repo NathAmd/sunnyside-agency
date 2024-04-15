@@ -92,6 +92,8 @@ body {
             article{
                 text-align: center;
                 height: auto;
+
+
             #OnRect{
                 padding: 3em;
                 padding-top: 15%;
@@ -249,6 +251,13 @@ $Pixel:720px;
         }
     }
 
+    #a {
+        order: 1;
+    }
+    #b {
+        order: 2;
+    }
+
     main {
         
         #Section-1 {
@@ -301,6 +310,15 @@ $Pixel:720px;
                         opacity: 0;
                     }
                 }
+
+        #a {
+            order: 2;
+        }
+    
+        #b {
+            order: 1;
+        }
+
         main {
     
             #Section-1 {
